@@ -19,6 +19,8 @@ blur_gray = cv2.GaussianBlur(gray,(kernel_size, kernel_size),0)
 # Define our parameters for Canny and run it
 low_threshold = 20
 high_threshold = 60
+#high_threshold, _ = cv2.threshold(blur_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+#low_threshold = 0.5 * high_threshold
 edges = cv2.Canny(blur_gray, low_threshold, high_threshold)
 
 # Display the image
