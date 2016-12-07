@@ -13,16 +13,13 @@ def grayscale(img):
     you should call plt.imshow(gray, cmap='gray')"""
     return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-
 def canny(img, low_threshold, high_threshold):
     """Applies the Canny transform"""
     return cv2.Canny(img, low_threshold, high_threshold)
 
-
 def gaussian_blur(img, kernel_size):
     """Applies a Gaussian Noise kernel"""
     return cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)
-
 
 def region_of_interest(img, vertices):
     """
@@ -48,7 +45,6 @@ def region_of_interest(img, vertices):
     masked_image = cv2.bitwise_and(img, mask)
     return masked_image
 
-
 def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
     """
     NOTE: this is the function you might want to use as a starting point once you want to
@@ -70,7 +66,6 @@ def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
         for x1, y1, x2, y2 in line:
             cv2.line(img, (x1, y1), (x2, y2), color, thickness)
 
-
 def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap):
     """
     `img` should be the output of a Canny transform.
@@ -82,7 +77,6 @@ def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap):
     line_img = np.zeros((*img.shape, 3), dtype=np.uint8)
     draw_lines(line_img, lines)
     return line_img
-
 
 # Python 3 has support for cool math symbols.
 
@@ -100,7 +94,6 @@ def weighted_img(img, initial_img, α=0.8, β=1., λ=0.):
     """
     return cv2.addWeighted(initial_img, α, img, β, λ)
 
-
 images = os.listdir("test_images/")
 
 ## Parameters
@@ -108,8 +101,6 @@ images = os.listdir("test_images/")
 red_threshold = 130
 green_threshold = 130
 blue_threshold = 0
-
-
 
 for i in images:
     # Open image
