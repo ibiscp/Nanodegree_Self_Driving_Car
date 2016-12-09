@@ -96,15 +96,15 @@ def weighted_img(img, initial_img, α=0.8, β=1., λ=0.):
 
 images = os.listdir("test_images/")
 
-## Parameters
-# Define color selection criteria
-red_threshold = 130
-green_threshold = 130
-blue_threshold = 0
-
 for i in images:
     # Open image
     image = mpimg.imread('test_images/' + i)
+
+    #------------------------------Apply Color------------------------------#
+    # Define color selection criteria
+    red_threshold = 130
+    green_threshold = 130
+    blue_threshold = 0
 
     # Grab the x and y size and make a copy of the image
     ysize = image.shape[0]
@@ -113,17 +113,18 @@ for i in images:
     line_image = np.copy(image)
 
     # Define the vertices of a triangular mask.
+    # Keep in mind the origin (x=0, y=0) is in the upper left
     left_bottom = [0, ysize]
     right_bottom = [xsize, ysize]
-    apex = [round(xsize / 2), round(ysize / 2)]
-
-    rgb_threshold = [red_threshold, green_threshold, blue_threshold]
+    apex = [round(xsize / 2), round(ysize / 2)+40]
 
     # Perform a linear fit (y=Ax+B) to each of the three sides of the triangle
     # np.polyfit returns the coefficients [A, B] of the fit
     fit_left = np.polyfit((left_bottom[0], apex[0]), (left_bottom[1], apex[1]), 1)
     fit_right = np.polyfit((right_bottom[0], apex[0]), (right_bottom[1], apex[1]), 1)
     fit_bottom = np.polyfit((left_bottom[0], right_bottom[0]), (left_bottom[1], right_bottom[1]), 1)
+
+    rgb_threshold = [red_threshold, green_threshold, blue_threshold]
 
     # Perform a "bitwise or" to mask pixels below the threshold
     color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
@@ -141,61 +142,70 @@ for i in images:
     # Color pixels red where both color and region selections met
     line_image[~color_thresholds & region_thresholds] = [255, 0, 0]
 
-    # Define a kernel size for Gaussian smoothing / blurring
-    gray = cv2.cvtColor(color_select, cv2.COLOR_BGR2GRAY)
-    kernel_size = 3  # Must be an odd number (3, 5, 7...)
-    blur_gray = cv2.GaussianBlur(gray, (kernel_size, kernel_size), 0)
+    # Display the image and show region and color selections
+    # plt.imshow(image)
+    # x = [left_bottom[0], right_bottom[0], apex[0], left_bottom[0]]
+    # y = [left_bottom[1], right_bottom[1], apex[1], left_bottom[1]]
+    # plt.plot(x, y, 'b--', lw=4)
+    # plt.imshow(color_select)
+    # plt.imshow(line_image)
 
-    # Define our parameters for Canny
-    high_threshold, _ = cv2.threshold(blur_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    # plt.show()
+
+    #------------------------------Apply Canny------------------------------#
+    # Convert image to gray
+    gray_image = grayscale(color_select)
+
+    # Blur image
+    blur_image = gaussian_blur(gray_image, 3)
+
+    # Define our parameters for Canny and run it
+    high_threshold, _ = cv2.threshold(blur_image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     low_threshold = 0.5 * high_threshold
 
-    # Run Canny
-    edges = cv2.Canny(blur_gray, low_threshold, high_threshold)
+    # Apply Canny
+    canny_image = canny(blur_image, low_threshold, high_threshold)
 
-    # Next we'll create a masked edges image using cv2.fillPoly()
-    mask = np.zeros_like(edges)
+    # ------------------------------Apply Hough------------------------------#
+    # Create a masked edges image using cv2.fillPoly()
+    mask = np.zeros_like(canny_image)
     ignore_mask_color = 255
 
     # This time we are defining a four sided polygon to mask
     imshape = image.shape
-    vertices = np.array([[(0, imshape[0]), (imshape[1] / 2, imshape[0] / 2), (imshape[1] / 2, imshape[0] / 2),
-                          (imshape[1], imshape[0])]], dtype=np.int32)
-    cv2.fillPoly(mask, vertices, ignore_mask_color)
-    masked_edges = cv2.bitwise_and(edges, mask)
+    vertices = np.array([[(0, imshape[0]), (imshape[1] / 2, imshape[0] / 2), (imshape[1], imshape[0])]], dtype=np.int32)
+    masked_image = region_of_interest(canny_image, vertices)
 
     # Define the Hough transform parameters
     # Make a blank the same size as our image to draw on
-    rho = 2  # distance resolution in pixels of the Hough grid
+    rho = 3  # distance resolution in pixels of the Hough grid
     theta = np.pi / 180  # angular resolution in radians of the Hough grid
-    threshold = 150  # minimum number of votes (intersections in Hough grid cell)
+    threshold = 50  # minimum number of votes (intersections in Hough grid cell)
     min_line_length = 40  # minimum number of pixels making up a line
     max_line_gap = 20  # maximum gap in pixels between connectable line segments
     line_image = np.copy(image) * 0  # creating a blank to draw lines on
 
-    # Run Hough on edge detected image
-    # Output "lines" is an array containing endpoints of detected line segments
-    lines = cv2.HoughLinesP(masked_edges, rho, theta, threshold, np.array([]),
-                            min_line_length, max_line_gap)
+    hough_image = hough_lines(masked_image,rho,theta,threshold,min_line_length,max_line_gap)
 
-    # Iterate over the output "lines" and draw lines on a blank image
+    lines = cv2.HoughLinesP(masked_image, rho, theta, threshold, np.array([]), min_line_length, max_line_gap)
+
     for line in lines:
         for x1, y1, x2, y2 in line:
-            cv2.line(line_image, (x1, y1), (x2, y2), (255, 0, 0), 10)
+            angle = ((y2-y1)/(x2-x1))
+            print(angle)
 
-    # Create a "color" binary image to combine with line image
-    color_edges = np.dstack((edges, edges, edges))
+    draw_image = weighted_img(hough_image, image)
 
-    # Draw the lines on the edge image
-    lines_edges = cv2.addWeighted(color_edges, 0.8, line_image, 1, 0)
-    # plt.imshow(lines_edges)
+    plt.subplot(221)
+    plt.imshow(draw_image)
+    plt.subplot(222)
+    plt.imshow(color_select)
+    plt.subplot(223)
+    plt.imshow(canny_image, cmap='Greys_r')
+    plt.subplot(224)
+    plt.imshow(hough_image)
 
-    # plt.imshow(lines_edges)
+    mng = plt.get_current_fig_manager()
+    mng.window.state('zoomed')
 
-    ibis = draw_lines(image, lines_edges)
-
-    plt.imshow(ibis)
     plt.show()
-
-    os.system("pause")
-
