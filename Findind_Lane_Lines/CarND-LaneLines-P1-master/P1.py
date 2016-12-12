@@ -149,6 +149,60 @@ def weighted_img(img, initial_img, α=0.8, β=1., λ=0.):
 #
 #     return([mean_right[0], mean_left[0]])
 
+def find_lanes(lines, ysize):
+    """
+    Function that extrapolate and calculates the lines returned by the Hough Transformation
+
+    :param lines: the output from the Hough Transformation
+    :return: two lines, one for the right and one for the left lane
+    """
+    interpolated_right = []
+    interpolated_left = []
+    mean_right = [0,0,0,0]
+    mean_left = [0,0,0,0]
+    inf = 330
+
+    for line in lines:
+        for x1, y1, x2, y2 in line:
+            angle = ((y2-y1)/(x2-x1))
+            length = np.sqrt((x2-x1)**2 + (y2-y1)**2)
+
+            if angle > 0:
+                interpolated_right.append([[(ysize-y2)/angle + x2, ysize, (inf-y2)/angle + x2, inf, length, angle]])
+            elif angle < 0:
+                interpolated_left.append([[(ysize-y2)/angle + x2, ysize, (inf-y2)/angle + x2, inf, length,angle]])
+            else:
+                print("Angle equal zero")
+
+    # Calculate mean value for right side
+    a = 0
+    for y in interpolated_right:
+        for x1, y1, x2, y2, length, angle in y:
+            mean_right = [mean_right[0]+x1*length, mean_right[1]+y1*length,
+                          mean_right[2]+x2*length, mean_right[3]+y2*length]
+            a += length
+
+    if a != 0 and sum(mean_left) < 10**6:
+        mean_right = [[[int(mean_right[0]/a),int(mean_right[1]/a),int(mean_right[2]/a),int(mean_right[3]/a)]]]
+    else:
+        print("Division by zero")
+        mean_right = [[[0, 0, 0, 0]]]
+
+    # Calculate mean value for left side
+    a = 0
+    for y in interpolated_left:
+        for x1, y1, x2, y2, length, angle in y:
+            mean_left = [mean_left[0]+x1*length,mean_left[1]+y1*length,
+                          mean_left[2]+x2*length,mean_left[3]+y2*length]
+            a += length
+
+    if a != 0 and sum(mean_left) < 10**50:
+        mean_left = [[[int(mean_left[0]/a),int(mean_left[1]/a),int(mean_left[2]/a),int(mean_left[3]/a)]]]
+    else:
+        print("Division by zero")
+        mean_left = [[[0, 0, 0, 0]]]
+
+    return([mean_right[0], mean_left[0]])
 
 def save_image(data, fn):
 
@@ -166,124 +220,120 @@ def save_image(data, fn):
     plt.savefig(fn, dpi = height)
     plt.close()
 
-# images = os.listdir("test_images/")
-# images = filter( lambda f: not f.startswith(('Process', 'Final')), os.listdir("test_images/"))
-#
-# for i in images:
-#     # Open image
-#     image = mpimg.imread('test_images/' + i)
-#
-#     #------------------------------Apply Color------------------------------#
-#     # Define color selection criteria
-#     red_threshold = 130
-#     green_threshold = 130
-#     blue_threshold = 0
-#
-#     # Grab the x and y size and make a copy of the image
-#     ysize = image.shape[0]
-#     xsize = image.shape[1]
-#     color_select = np.copy(image)
-#     line_image = np.copy(image)
-#
-#     # Define the vertices of a triangular mask
-#     left_bottom = [0, ysize]
-#     right_bottom = [xsize, ysize]
-#     apex = [round(xsize / 2), round(ysize / 2)+40]
-#
-#     # Perform a linear fit (y=Ax+B) to each of the three sides of the triangle
-#     fit_left = np.polyfit((left_bottom[0], apex[0]), (left_bottom[1], apex[1]), 1)
-#     fit_right = np.polyfit((right_bottom[0], apex[0]), (right_bottom[1], apex[1]), 1)
-#     fit_bottom = np.polyfit((left_bottom[0], right_bottom[0]), (left_bottom[1], right_bottom[1]), 1)
-#
-#     rgb_threshold = [red_threshold, green_threshold, blue_threshold]
-#
-#     # Perform a "bitwise or" to mask pixels below the threshold
-#     color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
-#                        (image[:, :, 1] < rgb_threshold[1]) | \
-#                        (image[:, :, 2] < rgb_threshold[2])
-#
-#     # Find the region inside the lines
-#     XX, YY = np.meshgrid(np.arange(0, xsize), np.arange(0, ysize))
-#     region_thresholds = (YY > (XX * fit_left[0] + fit_left[1])) & \
-#                         (YY > (XX * fit_right[0] + fit_right[1])) & \
-#                         (YY < (XX * fit_bottom[0] + fit_bottom[1]))
-#
-#     # Mask color and region selection
-#     color_select[color_thresholds | ~region_thresholds] = [0, 0, 0]
-#
-#     #------------------------------Apply Canny------------------------------#
-#     # Convert image to gray
-#     gray_image = grayscale(color_select)
-#
-#     # Blur image
-#     blur_image = gaussian_blur(gray_image, 3)
-#
-#     # Define our parameters for Canny and run it
-#     high_threshold, _ = cv2.threshold(blur_image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-#     low_threshold = 0.5 * high_threshold
-#
-#     # Apply Canny
-#     canny_image = canny(blur_image, low_threshold, high_threshold)
-#
-#     # ------------------------------Apply Hough------------------------------#
-#     # Create a masked edges image using cv2.fillPoly()
-#     mask = np.zeros_like(canny_image)
-#     ignore_mask_color = 255
-#
-#     # This time we are defining a four sided polygon to mask
-#     imshape = image.shape
-#     vertices = np.array([[(0, imshape[0]), (imshape[1] / 2, imshape[0] / 2), (imshape[1], imshape[0])]], dtype=np.int32)
-#     masked_image = region_of_interest(canny_image, vertices)
-#
-#     # Define the Hough transform parameters
-#     # Make a blank the same size as our image to draw on
-#     rho = 1  # distance resolution in pixels of the Hough grid
-#     theta = np.pi / 180  # angular resolution in radians of the Hough grid
-#     threshold = 10  # minimum number of votes (intersections in Hough grid cell)
-#     min_line_length = 40  # minimum number of pixels making up a line
-#     max_line_gap = 20  # maximum gap in pixels between connectable line segments
-#     line_image = np.copy(image) * 0  # creating a blank to draw lines on
-#
-#     lines = cv2.HoughLinesP(masked_image, rho, theta, threshold, np.array([]), min_line_length, max_line_gap)
-#
-#     # ------------------------------Extrapolate lines------------------------------#
-#     lanes = find_lanes(lines)
-#
-#     hough_image = hough_lines(masked_image,rho,theta,threshold,min_line_length,max_line_gap, lanes)
-#
-#     draw_image = weighted_img(hough_image, image)
-#
-#     # ------------------------------Plot and save images------------------------------#
-#
-#     plt.subplot(221)
-#     plt.title('Color Selection')
-#     plt.imshow(color_select)
-#     plt.axis('off')
-#     plt.subplot(222)
-#     plt.title('Canny Edges')
-#     plt.imshow(canny_image, cmap='Greys_r')
-#     plt.axis('off')
-#     plt.subplot(223)
-#     plt.title('Hough Transformation')
-#     plt.imshow(hough_image)
-#     plt.axis('off')
-#     plt.subplot(224)
-#     plt.title('Final Image')
-#     plt.imshow(draw_image)
-#     plt.axis('off')
-#
-#     mng = plt.get_current_fig_manager()
-#     mng.window.showMaximized()
-#     # mng = plt.get_current_fig_manager()
-#     # mng.window.state('zoomed')
-#
-#     plt.savefig('test_images/' + 'Process ' + i)
-#
-#     # plt.clf()
-#     # plt.imshow(draw_image)
-#     # plt.axis('off')
-#     # plt.savefig('test_images/' + 'Final ' + i, bbox_inches='tight', pad_inches = 0)
-#
-#     save_image(draw_image, 'test_images/' + 'Final ' + i)
-#
-#     #plt.show()
+def batch_analyze(path):
+
+    images = filter( lambda f: not f.startswith(('Process', 'Final')), os.listdir(path))
+
+    for i in images:
+        # Open image
+        image = mpimg.imread(path + i)
+
+        #------------------------------Apply Color------------------------------#
+        # Define color selection criteria
+        red_threshold = 130
+        green_threshold = 130
+        blue_threshold = 130
+
+        # Grab the x and y size and make a copy of the image
+        ysize = image.shape[0]
+        xsize = image.shape[1]
+        color_select = np.copy(image)
+
+        # Define the vertices of a triangular mask
+        left_bottom = [0, ysize]
+        right_bottom = [xsize, ysize]
+        apex = [round(xsize / 2), 330]#round(ysize / 2)+40]
+
+        # Perform a linear fit (y=Ax+B) to each of the three sides of the triangle
+        fit_left = np.polyfit((left_bottom[0], apex[0]), (left_bottom[1], apex[1]), 1)
+        fit_right = np.polyfit((right_bottom[0], apex[0]), (right_bottom[1], apex[1]), 1)
+        fit_bottom = np.polyfit((left_bottom[0], right_bottom[0]), (left_bottom[1], right_bottom[1]), 1)
+
+        rgb_threshold = [red_threshold, green_threshold, blue_threshold]
+
+        # Perform a "bitwise or" to mask pixels below the threshold
+        color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
+                           (image[:, :, 1] < rgb_threshold[1]) | \
+                           (image[:, :, 2] < rgb_threshold[2])
+
+        # Find the region inside the lines
+        XX, YY = np.meshgrid(np.arange(0, xsize), np.arange(0, ysize))
+        region_thresholds = (YY > (XX * fit_left[0] + fit_left[1])) & \
+                            (YY > (XX * fit_right[0] + fit_right[1])) & \
+                            (YY < (XX * fit_bottom[0] + fit_bottom[1]))
+
+        # Mask color and region selection
+        color_select[color_thresholds | ~region_thresholds] = [0, 0, 0]
+
+        #------------------------------Apply Canny------------------------------#
+        # Convert image to gray
+        gray_image = grayscale(color_select)
+
+        # Blur image
+        blur_image = gaussian_blur(gray_image, 3)
+
+        # Define our parameters for Canny and run it
+        high_threshold, _ = cv2.threshold(blur_image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        low_threshold = 0.5 * high_threshold
+
+        # Apply Canny
+        canny_image = canny(blur_image, low_threshold, high_threshold)
+
+        # ------------------------------Apply Hough------------------------------#
+        # Create a masked edges image using cv2.fillPoly()
+        mask = np.zeros_like(canny_image)
+
+        # This time we are defining a four sided polygon to mask
+        imshape = image.shape
+        vertices = np.array([[(0, imshape[0]), (imshape[1] / 2, imshape[0] / 2), (imshape[1], imshape[0])]], dtype=np.int32)
+        masked_image = region_of_interest(canny_image, vertices)
+
+        # Define the Hough transform parameters
+        # Make a blank the same size as our image to draw on
+        rho = 1  # distance resolution in pixels of the Hough grid
+        theta = np.pi / 180  # angular resolution in radians of the Hough grid
+        threshold = 10  # minimum number of votes (intersections in Hough grid cell)
+        min_line_length = 40  # minimum number of pixels making up a line
+        max_line_gap = 20  # maximum gap in pixels between connectable line segments
+
+        lines = cv2.HoughLinesP(masked_image, rho, theta, threshold, np.array([]), min_line_length, max_line_gap)
+
+        # ------------------------------Extrapolate lines------------------------------#
+        lanes = find_lanes(lines, ysize)
+
+        hough_image = hough_lines(masked_image,rho,theta,threshold,min_line_length,max_line_gap, lanes)
+
+        draw_image = weighted_img(hough_image, image)
+
+        # ------------------------------Plot and save images------------------------------#
+
+        plt.subplot(221)
+        plt.title('Color Selection')
+        plt.imshow(color_select)
+        plt.axis('off')
+        plt.subplot(222)
+        plt.title('Canny Edges')
+        plt.imshow(canny_image, cmap='Greys_r')
+        plt.axis('off')
+        plt.subplot(223)
+        plt.title('Hough Transformation')
+        plt.imshow(hough_image)
+        plt.axis('off')
+        plt.subplot(224)
+        plt.title('Final Image')
+        plt.imshow(draw_image)
+        plt.axis('off')
+
+        # mng = plt.get_current_fig_manager()
+        # mng.window.showMaximized()
+        # mng = plt.get_current_fig_manager()
+        # mng.window.state('zoomed')
+
+        plt.savefig(path + 'Process ' + i)
+
+        save_image(draw_image, path + 'Final ' + i)
+
+        #plt.show()
+
+#batch_analyze("test_images/")
+batch_analyze("video_images/")

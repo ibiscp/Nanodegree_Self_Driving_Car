@@ -1,3 +1,5 @@
+from random import randint
+
 __author__ = 'Ibis'
 
 # Import everything needed to edit/save/watch video clips
@@ -10,14 +12,8 @@ import cv2
 import os
 import math
 
-def find_lanes(lines, ysize):
+def find_lanes(lines, ysize, image):
     global last_left_angle, last_right_angle, last_mean_left, last_mean_right
-
-
-    # print()
-    # print(last_left_angle)
-    # print(last_right_angle)
-
     """
     Function that extrapolate and calculates the lines returned by the Hough Transformation
 
@@ -41,6 +37,7 @@ def find_lanes(lines, ysize):
                 interpolated_left.append([[(ysize-y2)/angle + x2, ysize, (inf-y2)/angle + x2, inf, length,angle]])
             else:
                 print("Angle equal zero")
+                P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
 
     # Calculate mean value for right side
     a = 0
@@ -60,6 +57,7 @@ def find_lanes(lines, ysize):
         last_right_angle = right_angle / count
         last_mean_right = mean_right
     else:
+        P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
         print("Division by zero")
         mean_right = last_mean_right
 
@@ -81,6 +79,7 @@ def find_lanes(lines, ysize):
         last_left_angle = left_angle/count
         last_mean_left = mean_left
     else:
+        P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
         print("Division by zero")
         mean_left = last_mean_left
 
@@ -101,7 +100,6 @@ def process_image(image):
     ysize = image.shape[0]
     xsize = image.shape[1]
     color_select = np.copy(image)
-    line_image = np.copy(image)
 
     # Define the vertices of a triangular mask
     left_bottom = [0, ysize]
@@ -154,18 +152,16 @@ def process_image(image):
     masked_image = P1.region_of_interest(canny_image, vertices)
 
     # Define the Hough transform parameters
-    # Make a blank the same size as our image to draw on
     rho = 1  # distance resolution in pixels of the Hough grid
     theta = np.pi / 180  # angular resolution in radians of the Hough grid
     threshold = 10  # minimum number of votes (intersections in Hough grid cell)
     min_line_length = 40  # minimum number of pixels making up a line
     max_line_gap = 20  # maximum gap in pixels between connectable line segments
-    line_image = np.copy(image) * 0  # creating a blank to draw lines on
 
     lines = cv2.HoughLinesP(masked_image, rho, theta, threshold, np.array([]), min_line_length, max_line_gap)
 
     # ------------------------------Extrapolate lines------------------------------#
-    lanes = find_lanes(lines, ysize)
+    lanes = find_lanes(lines, ysize, image)
 
     hough_image = P1.hough_lines(masked_image,rho,theta,threshold,min_line_length,max_line_gap, lanes)
 
