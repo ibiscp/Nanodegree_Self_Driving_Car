@@ -2,21 +2,196 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3e9187-558b-4d6a-8da6-d1628438b8b5" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final solidWhiteCurve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final solidWhiteRight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final solidYellowCurve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final solidYellowCurve2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final solidYellowLeft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Final whiteCarLaneSwitch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process solidWhiteCurve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process solidWhiteRight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process solidYellowCurve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process solidYellowCurve2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process solidYellowLeft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\test_images\Process whiteCarLaneSwitch.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\10242.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\11621.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\12391.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\13016.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\13635.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\13938.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\14220.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\16689.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\17686.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\17835.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\19827.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\21293.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\22534.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\25537.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\27161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\30772.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\33429.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\33492.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\36063.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\36969.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\38573.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\39059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\39749.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\40502.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\41078.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\43608.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\45708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\45971.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\47639.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\48104.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\51202.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\52409.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\52591.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\52959.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\53047.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\55806.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\55864.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\56253.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\60069.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\62929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\63200.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\63708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\63909.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\65061.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\65863.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\66641.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\73711.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\75630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\78059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\78197.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\80742.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\82161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\82182.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\84986.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\86292.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\87929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\90194.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\93630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\94660.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\95175.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\95329.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\99688.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 10242.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 11621.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 12391.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 13016.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 13635.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 13938.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 14220.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 16689.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 17686.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 17835.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 19827.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 21293.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 22534.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 25537.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 27161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 30772.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 33429.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 33492.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 36063.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 36969.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 38573.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 39059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 39749.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 40502.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 41078.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 43608.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 45708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 45971.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 47639.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 48104.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 51202.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 52409.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 52591.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 52959.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 53047.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 55806.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 55864.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 56253.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 60069.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 62929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 63200.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 63708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 63909.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 65061.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 65863.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 66641.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 73711.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 75630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 78059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 78197.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 80742.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 82161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 82182.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 84986.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 86292.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 87929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 90194.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 93630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 94660.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 95175.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 95329.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Final 99688.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 10242.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 11621.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 12391.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 13016.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 13635.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 13938.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 14220.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 16689.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 17686.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 17835.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 19827.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 21293.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 22534.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 25537.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 27161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 30772.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 33429.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 33492.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 36063.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 36969.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 38573.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 39059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 39749.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 40502.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 41078.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 43608.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 45708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 45971.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 47639.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 48104.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 51202.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 52409.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 52591.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 52959.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 53047.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 55806.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 55864.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 56253.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 60069.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 62929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 63200.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 63708.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 63909.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 65061.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 65863.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 66641.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 73711.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 75630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 78059.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 78197.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 80742.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 82161.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 82182.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 84986.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 86292.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 87929.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 90194.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 93630.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 94660.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 95175.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 95329.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\Process 99688.jpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/white.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/white.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/yellow.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/yellow.mp4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Nanodegree_Self_Driving_Car.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,27 +215,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md">
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Color_Selection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="816">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
               <folding>
                 <element signature="e#21#52#0" expanded="true" />
               </folding>
@@ -71,8 +230,8 @@
       <file leaf-file-name="Color_Region.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1190">
-              <caret line="54" column="10" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1190">
+              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
               <folding>
                 <element signature="e#21#52#0" expanded="true" />
               </folding>
@@ -83,7 +242,7 @@
       <file leaf-file-name="Canny_Edges.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="527">
+            <state vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="527">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
@@ -93,18 +252,18 @@
       <file leaf-file-name="Hough_Transform.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1054">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="36" />
+            <state vertical-scroll-proportion="-9.5172415" vertical-offset="608" max-vertical-offset="1054">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="P1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="P1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51554406" vertical-offset="3779" max-vertical-offset="5848">
-              <caret line="234" column="27" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
+            <state vertical-scroll-proportion="114.17242" vertical-offset="4943" max-vertical-offset="5287">
+              <caret line="96" column="140" selection-start-line="96" selection-start-column="140" selection-end-line="96" selection-end-column="140" />
               <folding>
                 <element signature="e#32#63#0" expanded="true" />
               </folding>
@@ -112,41 +271,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="P1_Videos.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="P1_Videos.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3196">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="391">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ansitowin32.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/colorama/ansitowin32.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="4012">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoClip.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/moviepy/video/VideoClip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7998" max-vertical-offset="19754">
-              <caret line="513" column="0" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.70348835" vertical-offset="2597" max-vertical-offset="2941">
+              <caret line="167" column="53" selection-start-line="167" selection-start-column="53" selection-end-line="167" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -172,8 +301,9 @@
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py" />
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py" />
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md" />
-        <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" />
+        <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test.py" />
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" />
+        <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" />
       </list>
     </option>
   </component>
@@ -300,7 +430,7 @@
     </option>
     <option name="myIpythonEnabled" value="false" />
   </component>
-  <component name="RunManager" selected="Python.P1">
+  <component name="RunManager" selected="Python.P1_Videos">
     <configuration default="false" name="Color_Selection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,27 +467,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Hough_Transform" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Findind_Lane_Lines" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Nanodegree_Self_Driving_Car" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <configuration default="false" name="P1" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -399,6 +508,25 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Nanodegree_Self_Driving_Car" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -527,17 +655,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Color_Selection" />
       <item index="1" class="java.lang.String" itemvalue="Python.Color_Region" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Hough_Transform" />
-      <item index="3" class="java.lang.String" itemvalue="Python.P1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.P1_Videos" />
+      <item index="2" class="java.lang.String" itemvalue="Python.P1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.P1_Videos" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.P1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.P1_Videos" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Color_Region" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Color_Selection" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Hough_Transform" />
+        <item index="0" class="java.lang.String" itemvalue="Python.P1_Videos" />
+        <item index="1" class="java.lang.String" itemvalue="Python.P1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Color_Region" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Color_Selection" />
       </list>
     </recent_temporary>
   </component>
@@ -559,15 +687,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3480315" sideWeight="0.52562225" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3480315" sideWeight="0.47437775" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32506528" sideWeight="0.486875" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4503937" sideWeight="0.58052707" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -575,7 +704,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -597,6 +725,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -604,59 +749,17 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="lines" />
         <watch expression="lines" />
+        <watch expression="angle" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#32#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/test.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md" />
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -904,9 +1007,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -916,41 +1016,8 @@
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="10" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://C:/Python35/Lib/codecs.py">
@@ -991,21 +1058,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py">
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3196">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="527">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3316062" vertical-offset="15801" max-vertical-offset="30413">
+          <caret line="972" column="0" selection-start-line="972" selection-start-column="0" selection-end-line="972" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3316062" vertical-offset="16770" max-vertical-offset="65535">
+          <caret line="1029" column="0" selection-start-line="1029" selection-start-column="0" selection-end-line="1029" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30472" max-vertical-offset="31212">
+          <caret line="1817" column="0" selection-start-line="1817" selection-start-column="0" selection-end-line="1817" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5172415" vertical-offset="608" max-vertical-offset="1054">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-43.87824" vertical-offset="24247" max-vertical-offset="25398">
+          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1190">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51554406" vertical-offset="3779" max-vertical-offset="5848">
-          <caret line="234" column="27" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
+        <state vertical-scroll-proportion="114.17242" vertical-offset="4943" max-vertical-offset="5287">
+          <caret line="96" column="140" selection-start-line="96" selection-start-column="140" selection-end-line="96" selection-end-column="140" />
           <folding>
             <element signature="e#32#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70348835" vertical-offset="2597" max-vertical-offset="2941">
+          <caret line="167" column="53" selection-start-line="167" selection-start-column="53" selection-end-line="167" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
