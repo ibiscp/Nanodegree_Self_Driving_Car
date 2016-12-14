@@ -290,11 +290,6 @@ def batch_analyze(path):
         plt.imshow(draw_image)
         plt.axis('off')
 
-        # mng = plt.get_current_fig_manager()
-        # mng.window.showMaximized()
-        # mng = plt.get_current_fig_manager()
-        # mng.window.state('zoomed')
-
         plt.savefig(path + 'Process ' + i)
 
         save_image(draw_image, path + 'Final ' + i)

@@ -4,13 +4,9 @@ __author__ = 'Ibis'
 
 # Import everything needed to edit/save/watch video clips
 from moviepy.editor import VideoFileClip
-from IPython.display import HTML
 import P1
-import matplotlib.image as mpimg
 import numpy as np
 import cv2
-import os
-import math
 
 def find_lanes(lines, ysize, image):
     global last_left_angle, last_right_angle, last_mean_left, last_mean_right
@@ -36,9 +32,6 @@ def find_lanes(lines, ysize, image):
                 interpolated_right.append([[(ysize-y2)/angle + x2, ysize, (inf-y2)/angle + x2, inf, length, angle]])
             elif angle < -0.5:
                 interpolated_left.append([[(ysize-y2)/angle + x2, ysize, (inf-y2)/angle + x2, inf, length,angle]])
-            # else:
-            #     print("Angle equal zero")
-            #     P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
 
     # Calculate mean value for right side
     a = 0
@@ -59,7 +52,6 @@ def find_lanes(lines, ysize, image):
         last_mean_right = mean_right
     else:
         P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
-        # print("Division by zero")
         mean_right = last_mean_right
 
     # Calculate mean value for left side
@@ -81,7 +73,6 @@ def find_lanes(lines, ysize, image):
         last_mean_left = mean_left
     else:
         P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
-        # print("Division by zero")
         mean_left = last_mean_left
 
     return([mean_right[0], mean_left[0]])
