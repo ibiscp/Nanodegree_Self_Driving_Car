@@ -1,5 +1,3 @@
-from random import randint
-
 __author__ = 'Ibis'
 
 # Import everything needed to edit/save/watch video clips
@@ -8,8 +6,8 @@ import P1
 import numpy as np
 import cv2
 
-def find_lanes(lines, ysize, image):
-    global last_left_angle, last_right_angle, last_mean_left, last_mean_right
+def find_lanes(lines, ysize, image, inf):
+    global last_left_angle, last_right_angle, last_mean_left, last_mean_right, iteration
     """
     Function that extrapolate and calculates the lines returned by the Hough Transformation
 
@@ -20,8 +18,10 @@ def find_lanes(lines, ysize, image):
     interpolated_left = []
     mean_right = [0,0,0,0]
     mean_left = [0,0,0,0]
-    inf = 330
     angle_dif = 0.2
+
+    # P1.save_image(image, 'video_images/' + str(iteration).zfill(5) + '.jpeg')
+    # iteration += 1
 
     for line in lines:
         for x1, y1, x2, y2 in line:
@@ -51,7 +51,7 @@ def find_lanes(lines, ysize, image):
         last_right_angle = right_angle / count
         last_mean_right = mean_right
     else:
-        P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
+        # P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
         mean_right = last_mean_right
 
     # Calculate mean value for left side
@@ -72,39 +72,56 @@ def find_lanes(lines, ysize, image):
         last_left_angle = left_angle/count
         last_mean_left = mean_left
     else:
-        P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
+        # P1.save_image(image, 'video_images/' + str(randint(10000,99999)) + '.jpeg')
         mean_left = last_mean_left
 
     return([mean_right[0], mean_left[0]])
 
 def process_image(image):
+    global inf, road
     # NOTE: The output you return should be a color image (3 channel) for processing video below
     # TODO: put your pipeline here,
     # you should return the final output (image with lines are drawn on lanes)
 
     #------------------------------Apply Color------------------------------#
-    # Define color selection criteria
-    red_threshold = 120
-    green_threshold = 150
-    blue_threshold = 50
-    rgb_threshold = [red_threshold, green_threshold, blue_threshold]
-
     # Grab the x and y size and make a copy of the image
     ysize = image.shape[0]
     xsize = image.shape[1]
     color_select = np.copy(image)
 
-    # Perform a "bitwise or" to mask pixels below the threshold
-    color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
-                       (image[:, :, 1] < rgb_threshold[1]) | \
-                       (image[:, :, 2] < rgb_threshold[2])
+    if (road is "curve"):
+        # Yellow threshold
+        yellow_start = [200, 150, 0]
+        yellow_end = [260, 210, 150]
+
+        # White threshold
+        white_start = [210, 190, 180]
+        white_end = [260, 260, 250]
+
+        yellow_threshold =  (image[:, :, 0] < yellow_start[0]) | (image[:, :, 0] > yellow_end[0]) | \
+                            (image[:, :, 1] < yellow_start[1]) | (image[:, :, 1] > yellow_end[1]) | \
+                            (image[:, :, 2] < yellow_start[2]) | (image[:, :, 2] > yellow_end[2])
+
+        white_threshold =  (image[:, :, 0] < white_start[0]) | (image[:, :, 0] > white_end[0]) | \
+                            (image[:, :, 1] < white_start[1]) | (image[:, :, 1] > white_end[1]) | \
+                            (image[:, :, 2] < white_start[2]) | (image[:, :, 2] > white_end[2])
+
+        color_thresholds = yellow_threshold & white_threshold
+    else:
+        # Define color selection criteria
+        rgb_threshold = [120, 150, 50]
+
+        # Perform a "bitwise or" to mask pixels below the threshold
+        color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
+                           (image[:, :, 1] < rgb_threshold[1]) | \
+                           (image[:, :, 2] < rgb_threshold[2])
 
     # Mask color and region selection
     color_select[color_thresholds] = [0, 0, 0]
 
     # This time we are defining a four sided polygon to mask
     imshape = image.shape
-    vertices = np.array([[(0, imshape[0]), (imshape[1] / 2 - 50, 330), (imshape[1] / 2 + 50, 330), (imshape[1], imshape[0])]], dtype=np.int32)
+    vertices = np.array([[(0, imshape[0]), (imshape[1] / 2 - 50, inf), (imshape[1] / 2 + 50, inf), (imshape[1], imshape[0])]], dtype=np.int32)
     masked_image = P1.region_of_interest(color_select, vertices)
 
     #------------------------------Apply Canny------------------------------#
@@ -132,7 +149,7 @@ def process_image(image):
     lines = cv2.HoughLinesP(canny_image, rho, theta, threshold, np.array([]), min_line_length, max_line_gap)
 
     # ------------------------------Extrapolate lines------------------------------#
-    lanes = find_lanes(lines, ysize, image)
+    lanes = find_lanes(lines, ysize, image, inf)
 
     hough_image = P1.hough_lines(canny_image,rho,theta,threshold,min_line_length,max_line_gap, lanes, 'polygon')
 
@@ -142,6 +159,9 @@ def process_image(image):
 
 last_right_angle = 0
 last_left_angle = 0
+iteration = 0
+inf = 330
+road = "straight"
 
 # white_output = 'white.mp4'
 # clip1 = VideoFileClip("solidWhiteRight.mp4")
@@ -153,6 +173,8 @@ last_left_angle = 0
 # yellow_clip = clip2.fl_image(process_image) #NOTE: this function expects color images!!
 # yellow_clip.write_videofile(yellow_output, audio=False)
 
+inf = 450
+road = "curve"
 curve_output = 'curve.mp4'
 clip3 = VideoFileClip("challenge.mp4")
 curve_clip = clip3.fl_image(process_image) #NOTE: this function expects color images!!

@@ -94,7 +94,8 @@ def draw_poly(img, lines, color_lane=[255, 0, 0], color_road=[0,255,0,50]):
     # pts = pts.reshape((-1,1,2))
     # cv2.fillPoly(img, [pts], color_road)
 
-    cv2.line(img, (int((lines[0][0][0] + lines[1][0][0])/2), y1), (int((lines[0][0][2] + lines[1][0][2])/2), y2), [255,255,255], thickness=1)
+    # Draw midle line
+    # cv2.line(img, (int((lines[0][0][0] + lines[1][0][0])/2), y1), (int((lines[0][0][2] + lines[1][0][2])/2), y2), [255,255,255], thickness=1)
 
 def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap, lines, figure):
     """
@@ -126,7 +127,7 @@ def weighted_img(img, initial_img, α=0.8, β=1., λ=0.):
     """
     return cv2.addWeighted(initial_img, α, img, β, λ)
 
-def find_lanes(lines, ysize):
+def find_lanes(lines, ysize, inf):
     """
     Function that extrapolate and calculates the lines returned by the Hough Transformation
 
@@ -137,7 +138,6 @@ def find_lanes(lines, ysize):
     interpolated_left = []
     mean_right = [0,0,0,0]
     mean_left = [0,0,0,0]
-    inf = 330
 
     for line in lines:
         for x1, y1, x2, y2 in line:
@@ -196,37 +196,59 @@ def save_image(data, fn):
     plt.savefig(fn, dpi = height)
     plt.close()
 
-def batch_analyze(path):
+def batch_analyze(path, road):
 
     images = filter( lambda f: not f.startswith(('Process', 'Final')), os.listdir(path))
 
     for i in images:
         # Open image
         image = mpimg.imread(path + i)
+        print(i)
+
+        # create a CLAHE object (Arguments are optional).
+        # clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+        # image = clahe.apply(image)
 
         #------------------------------Apply Color------------------------------#
-        # Define color selection criteria
-        red_threshold = 120
-        green_threshold = 150
-        blue_threshold = 50
-        rgb_threshold = [red_threshold, green_threshold, blue_threshold]
-
         # Grab the x and y size and make a copy of the image
         ysize = image.shape[0]
         xsize = image.shape[1]
         color_select = np.copy(image)
 
-        # Perform a "bitwise or" to mask pixels below the threshold
-        color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
-                           (image[:, :, 1] < rgb_threshold[1]) | \
-                           (image[:, :, 2] < rgb_threshold[2])
+        if (road is "curve"):
+            # Yellow threshold
+            yellow_start = [200, 150, 0]
+            yellow_end = [260, 210, 150]
+
+            # White threshold
+            white_start = [210, 190, 180]
+            white_end = [260, 260, 250]
+
+            yellow_threshold =  (image[:, :, 0] < yellow_start[0]) | (image[:, :, 0] > yellow_end[0]) | \
+                                (image[:, :, 1] < yellow_start[1]) | (image[:, :, 1] > yellow_end[1]) | \
+                                (image[:, :, 2] < yellow_start[2]) | (image[:, :, 2] > yellow_end[2])
+
+            white_threshold =  (image[:, :, 0] < white_start[0]) | (image[:, :, 0] > white_end[0]) | \
+                                (image[:, :, 1] < white_start[1]) | (image[:, :, 1] > white_end[1]) | \
+                                (image[:, :, 2] < white_start[2]) | (image[:, :, 2] > white_end[2])
+
+            color_thresholds = yellow_threshold & white_threshold
+        else:
+            # Define color selection criteria
+            rgb_threshold = [120, 150, 50]
+
+            # Perform a "bitwise or" to mask pixels below the threshold
+            color_thresholds = (image[:, :, 0] < rgb_threshold[0]) | \
+                               (image[:, :, 1] < rgb_threshold[1]) | \
+                               (image[:, :, 2] < rgb_threshold[2])
 
         # Mask color and region selection
         color_select[color_thresholds] = [0, 0, 0]
 
         # This time we are defining a four sided polygon to mask
         imshape = image.shape
-        vertices = np.array([[(0, imshape[0]), (imshape[1] / 2 - 50, 330), (imshape[1] / 2 + 50, 330), (imshape[1], imshape[0])]], dtype=np.int32)
+        inf = 450
+        vertices = np.array([[(0, imshape[0]), (imshape[1] / 2 - 50, inf), (imshape[1] / 2 + 80, inf), (imshape[1], imshape[0])]], dtype=np.int32)
         masked_image = region_of_interest(color_select, vertices)
 
         #------------------------------Apply Canny------------------------------#
@@ -257,7 +279,7 @@ def batch_analyze(path):
         lines_edges = hough_lines(canny_image,rho,theta,threshold,min_line_length,max_line_gap, lines, "line")
 
         # ------------------------------Extrapolate lines------------------------------#
-        lanes = find_lanes(lines, ysize)
+        lanes = find_lanes(lines, ysize, inf)
 
         hough_image = hough_lines(canny_image,rho,theta,threshold,min_line_length,max_line_gap, lanes, "polygon")
 
@@ -297,5 +319,7 @@ def batch_analyze(path):
 
         #plt.show()
 
-#batch_analyze("test_images/")
-batch_analyze("video_images/")
+road = "curve"
+road = "straight"
+# batch_analyze("test_images/")
+# batch_analyze("video_images/")
