@@ -2,42 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3e9187-558b-4d6a-8da6-d1628438b8b5" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\19593.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\20748.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\38153.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\54888.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\57245.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\85343.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\89094.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\97109.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\User\Documents\GitHub\Nanodegree_Self_Driving_Car\Findind_Lane_Lines\CarND-LaneLines-P1-master\video_images\99092.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidWhiteCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidWhiteCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidWhiteRight.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidWhiteRight.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowCurve2.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowCurve2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowLeft.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final solidYellowLeft.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final whiteCarLaneSwitch.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Final whiteCarLaneSwitch.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidWhiteCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidWhiteCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidWhiteRight.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidWhiteRight.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowCurve2.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowCurve2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowLeft.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color solidYellowLeft.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color whiteCarLaneSwitch.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process Color whiteCarLaneSwitch.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidWhiteCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidWhiteCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidWhiteRight.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidWhiteRight.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowCurve.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowCurve.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowCurve2.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowCurve2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowLeft.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process solidYellowLeft.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process whiteCarLaneSwitch.jpg" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test_images/Process whiteCarLaneSwitch.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/curve.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/curve.mp4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/extra.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/extra.mp4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/white.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/white.mp4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/yellow.mp4" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/yellow.mp4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/.ipynb_checkpoints/P1-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/.ipynb_checkpoints/P1-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.ipynb" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" afterPath="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Nanodegree_Self_Driving_Car.iws" />
@@ -62,70 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Color_Selection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
+      <file leaf-file-name="nn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniFlow/nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Color_Region.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Region.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1190">
-              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Canny_Edges.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Canny_Edges.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="527">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="2703">
+              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hough_Transform.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Hough_Transform.py">
+      <file leaf-file-name="miniflow.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MiniFlow/miniflow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1054">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.15264797" vertical-offset="6411" max-vertical-offset="7990">
+              <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="404" selection-end-column="47" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P1_Videos.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49865952" vertical-offset="2789" max-vertical-offset="3162">
-              <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="180" selection-end-column="53" />
-              <folding>
-                <element signature="e#79#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.827586" vertical-offset="3209" max-vertical-offset="5610">
-              <caret line="197" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-              <folding>
-                <element signature="e#32#63#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -153,6 +69,11 @@
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/test.py" />
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py" />
         <option value="$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py" />
+        <option value="$PROJECT_DIR$/MiniFlow/Input.py" />
+        <option value="$PROJECT_DIR$/MiniFlow/Add.py" />
+        <option value="$PROJECT_DIR$/MiniFlow/Neuron.py" />
+        <option value="$PROJECT_DIR$/MiniFlow/nn.py" />
+        <option value="$PROJECT_DIR$/MiniFlow/miniflow.py" />
       </list>
     </option>
   </component>
@@ -232,25 +153,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Findind_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nanodegree_Self_Driving_Car" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nanodegree_Self_Driving_Car" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Findind_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CarND-LaneLines-P1-master" />
+              <option name="myItemId" value="MiniFlow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,28 +182,7 @@
     </option>
     <option name="myIpythonEnabled" value="false" />
   </component>
-  <component name="RunManager" selected="Python.P1_Videos">
-    <configuration default="false" name="Color_Selection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Findind_Lane_Lines" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Nanodegree_Self_Driving_Car" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.nn">
     <configuration default="false" name="Color_Region" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,6 +258,27 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MiniFlow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Nanodegree_Self_Driving_Car" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MiniFlow/nn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -502,19 +405,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Color_Selection" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Color_Region" />
-      <item index="2" class="java.lang.String" itemvalue="Python.P1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.P1_Videos" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Color_Region" />
+      <item index="1" class="java.lang.String" itemvalue="Python.P1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.P1_Videos" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.nn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.P1_Videos" />
-        <item index="1" class="java.lang.String" itemvalue="Python.P1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Color_Region" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Color_Selection" />
+        <item index="0" class="java.lang.String" itemvalue="Python.nn" />
+        <item index="1" class="java.lang.String" itemvalue="Python.P1_Videos" />
+        <item index="2" class="java.lang.String" itemvalue="Python.P1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Color_Region" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +441,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3480315" sideWeight="0.52562225" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4503937" sideWeight="0.4194729" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -588,7 +491,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -599,23 +502,12 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md" />
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3209" max-vertical-offset="5610">
+          <caret line="197" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding>
-            <element signature="e#32#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/Color_Selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#32#63#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,7 +517,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,7 +541,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,7 +551,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,7 +575,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -693,7 +585,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,7 +615,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,7 +625,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,7 +655,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -787,7 +679,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,7 +696,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,7 +713,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,7 +723,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,9 +736,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
@@ -854,6 +743,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://C:/Python35/Lib/codecs.py">
@@ -889,7 +781,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -951,36 +843,52 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1190">
           <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="391">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.827586" vertical-offset="3209" max-vertical-offset="5610">
+        <state vertical-scroll-proportion="0.37533513" vertical-offset="3209" max-vertical-offset="5610">
           <caret line="197" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding>
-            <element signature="e#32#63#0" expanded="true" />
+            <element signature="e#32#63#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Findind_Lane_Lines/CarND-LaneLines-P1-master/P1_Videos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49865952" vertical-offset="2789" max-vertical-offset="3162">
+        <state vertical-scroll-proportion="7.975871" vertical-offset="0" max-vertical-offset="3162">
           <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="180" selection-end-column="53" />
           <folding>
             <element signature="e#79#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.682243" vertical-offset="70" max-vertical-offset="391">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniFlow/nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="2703">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniFlow/miniflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15264797" vertical-offset="6411" max-vertical-offset="7990">
+          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="404" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
