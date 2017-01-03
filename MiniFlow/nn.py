@@ -152,3 +152,4 @@ Output should be:
  [  1.23394576e-04   9.82013790e-01]]
 """
 print(output)
+
